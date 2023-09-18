@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>. ..</title>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/ft.js"></script>
+<script type="text/javascript">
+
+(function(){
+	var phoneWidth = parseInt(window.screen.width),
+		phoneScale = phoneWidth/640,
+		ua = navigator.userAgent;
+	if (/Android (\d+\.\d+)/.test(ua)){
+		var version = parseFloat(RegExp.$1);
+		if(version > 2.3){
+			//判断安卓
+			document.write('<meta name="viewport" content="width=device-width, initial-scale=0.75, minimum-scale=0.75, maximum-scale=0.75, user-scalable=no">');
+		}
+	} else {
+		//判断ios屏幕宽度
+		document.write('<meta name="viewport" content="width=device-width, initial-scale=0.76, minimum-scale=0.76, maximum-scale=0.76, user-scalable=no">');
+	}
+})();
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="css/copy.css">
+
+</head>
+<body>
+
+<div class="fzz1 btton" onClick="jQuery(&#39;.cox&#39;)"  data-clipboard-action="copy" data-clipboard-target=".fzz1">https://sslink.forkway.cn/u/5_fqbN</div></div>
+<p>联系方式qq3288088130</p>
+<div id="d1"  class="cox xs">
+	<div class="tc">
+		<div class="tc1">
+		稳定日收益100/500元！<br />
+		加入天马 实现财富自由
+		</div>
+		<div class="mp">
+			口左边勾上复制
+		</div>
+		<div class="check">
+			<input type="checkbox" name="agree" id="agree" class="checkbox btton" onClick="jQuery(&#39;.cox&#39;)"  data-clipboard-action="copy" data-clipboard-target=".fzz1">已为您复制qq 微信号，链接在浏览器访问
+		</div>
+		<div class="redbox">
+			<div class="buttonred mar">
+				<input type="submit" value="进入" class="btn btn1 close" onClick="jQuery(&#39;.cox&#39;).hide()"> 
+			</div>	
+		</div>
+	</div>	
+</div>	
+ <script type="text/javascript">
+	var clipboard = new Clipboard('.btton');
+	clipboard.on('success', function(e) {
+		console.log(e);
+	});
+	clipboard.on('error', function(e) {
+		console.log(e);
+	});
+</script>
+
+<div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
+</div>
+</body>
+</html>
